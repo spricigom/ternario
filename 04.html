@@ -1,17 +1,13 @@
 <meta charset="UTF-8">
 <script>
-    //Problema: Aumento de Preço
-    //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
-        //- até 280(inclusive): aumento de 20 %
-        //- até 700(inclusive): aumento de 15 %
-        //- até 1500(inclusive): aumento de 10 %
-        //- acima de 1500: aumento de 5 %
-    
-    //Entrada
+    //Problema: Vogal
+    //Construa um programa que leia um caractere e informe se este caractere é uma vogal.
 
+    //Entrada
+    const letra = prompt(`Insira uma letra`).trim().toUpperCase();
 
     //Processamento
-
+    let vogal = (letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U")? alert(`é uma vogal`) : alert(`não é vogal`);
     
     //Saída
 
