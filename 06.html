@@ -8,11 +8,14 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+    const idade = Number(prompt(`Informe a idade do seu cão`).trim().replace(",","."));
+    const porte = prompt(`Informe a porte do seu cão usando: P (pequeno), M (medio) e G (grande`).trim().toUpperCase
 
     //Processamento
-
-    
+    let idadeH = (porte == "P")? `A idade humana do seu cão é ${idade * 5} anos`
+        :(porte == "M")? `A idade humana do seu cão é ${idade * 6} anos`
+            : (porte == "G")? `A idade humana do seu cão é ${idade * 7} anos`
+            :`Mensagem invalida`;
     //Saída
-
+alert(idadeH);
 </script>
