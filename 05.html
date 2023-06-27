@@ -1,18 +1,29 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <script>
-    //Problema: Aumento de Preço
-    //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
-        //- até 280(inclusive): aumento de 20 %
-        //- até 700(inclusive): aumento de 15 %
-        //- até 1500(inclusive): aumento de 10 %
-        //- acima de 1500: aumento de 5 %
-    
-    //Entrada
+  //Problema: Aumento de Preço
+  //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
+      //- até 280(inclusive): aumento de 20 %
+      //- até 700(inclusive): aumento de 15 %
+      //- até 1500(inclusive): aumento de 10 %
+      //- acima de 1500: aumento de 5 %
+
+  //Entrada
+  const preco = Number(prompt(`Informe o preço do produto`).trim());
+
+  //Processamento
+//   let final = "";
+//   (preco <= 280) ? final = `Seu aumento foi de R$ ${(preco * (20 / 100))} reais.`
+//     : (preco <= 700) ? final = `Seu aumento foi de R$${(preco * (15 / 100))} reais.`
+//         : (preco <= 1500) ? final = `Seu aumento foi de R$ ${(preco * (10 / 100))} reais.`
+//             : final = `Seu aumento foi de R$ ${(preco * (5 / 100))} reais.`;
+//     alert(final);
+
+let final = (preco <= 280) ? `Seu aumento foi de R$ ${(preco * (20 / 100))} reais.`
+    : (preco <= 700) ? `Seu aumento foi de R$${(preco * (15 / 100))} reais.`
+        : (preco <= 1500) ? `Seu aumento foi de R$ ${(preco * (10 / 100))} reais.`
+            : `Seu aumento foi de R$ ${(preco * (5 / 100))} reais.`;
+    alert(final);
 
 
-    //Processamento
-
-    
-    //Saída
-
+//Saída
 </script>
