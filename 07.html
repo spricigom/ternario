@@ -10,11 +10,11 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const conceito = parseFloat(prompt(`Informe a sua nota que converterei para conceito`).trim().replace(",","."));
 
     //Processamento
-
+    let letra = (conceito >= 9)? `A`:(conceito >= 8)? `B`:(conceito >= 7)? `C`:(conceito >= 6)? `D` :`E`;
     
     //Saída
-
+alert(letra);
 </script>

@@ -6,12 +6,16 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
+    const preco = parseFloat(prompt(`Informe o preço do combustível`).trim().replace(",","."));
+    const litros = parseFloat(prompt(`Informe o quanto de combusível você usa para se deslocar para do trabalho`).trim().replace(",","."));
+    const publico = parseFloat(prompt(`Informe o preço do transporte público para se deslocar para do trabalho`).trim().replace(",","."));
 
     //Processamento
-
+    let precC = 2 * (preco * litros);
+    let precP = publico * 2;
     
+    (precC < precP) ? carro = alert(`O preço do combusítivel mais o km é de R$${precC} reais.`)
+        : alert(`O preço da passagem é mais barato que ir de veiculo pessoal.`)
     //Saída
-
     
 </script>
