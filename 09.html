@@ -9,14 +9,21 @@
 
     //Entrada
     const semana = parseFloat(prompt("Quantas horas você trabalha por semana?").trim().replace(",", "."));
-    const hora = parseFloat(prompt("Quanto você recebe por hora?").trim().replace(".", ","));
+     let hora = parseFloat(prompt("Quanto você recebe por hora?").trim().replace(".", ","));
 
     //Processamento
 
-    (semana <= 45) ? hora45 = alert("Você não receberá aumento.")
+    /*(semana <= 45) ? hora45 = alert("Você não receberá aumento.")
         : (semana > 45 && semana <= 60) ? hora60 = alert(`Seu salario teve um aumento de R$${hora * (20 / 100)}. E o salário semanalmente será de R$${(semana * hora) * (20 / 100)}.`)
-            : horafinal = alert(`Seu salário teve um aumento de R$${hora * (30 / 100)}. E o salário semanal de R$${(semana * hora) * (30 / 100)}.`);
-    
-    //Saída
+            : horafinal = alert(`Seu salário teve um aumento de R$${hora * (30 / 100)}. E o salário semanal de R$${(semana * hora) * (30 / 100)}.`);*/
 
+            let adicional = 0;
+            (semana <= 45)? adicional = 0
+                :(semana <= 60)? adicional = 20
+                    :adicional = 30
+    
+    hora = hora + (hora * adicional / 100);
+    const salarioSemana = hora * semana
+    //Saída
+    alert(`Horas trabalhadas por semana R$${salarioSemana} e salario por hora é R$${hora}`);
 </script>
